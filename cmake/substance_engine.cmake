@@ -23,7 +23,7 @@ endif()
 if(USDSBSAR_ENABLE_INSTALL)
   if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     install(
-      FILES $<TARGET_FILE:Substance::sse2_blend> $<TARGET_FILE:Substance::ogl3_blend> $<TARGET_FILE:Substance::Linker>
+      FILES $<TARGET_FILE:Substance::sse2_blend> $<TARGET_FILE:Substance::Linker>
         DESTINATION lib
         COMPONENT Runtime
      )
